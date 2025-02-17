@@ -110,7 +110,6 @@ local plugins = {
             -- options
         },
     },
-    {'nvim-java/nvim-java'},
     {'ThePrimeagen/vim-be-good'},
 }
 

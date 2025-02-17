@@ -10,7 +10,6 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {"tsserver", "eslint", "gopls", "golangci_lint_ls", "vimls", "yamlls"},
 	handlers = {
 		function(my_server)
 			require('lspconfig')[my_server].setup({})
@@ -49,16 +48,4 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', opts)
 	vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
 end)
-
-require('java').setup()
-require('lspconfig').jdtls.setup({})
-
-require('lspconfig').tsserver.setup({})
-require('lspconfig').eslint.setup({})
-
-require('lspconfig').gopls.setup({})
-require('lspconfig').golangci_lint_ls.setup({})
-
-require('lspconfig').vimls.setup({})
-require('lspconfig').yamlls.setup({})
 
