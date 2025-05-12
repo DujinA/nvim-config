@@ -90,6 +90,7 @@ return {
                 header = "",
                 prefix = "",
             },
+            virtual_text = { current_line = false }
         })
     end
 }
