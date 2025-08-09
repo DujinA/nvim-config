@@ -38,7 +38,7 @@ autocmd({"BufWritePre"}, {
 autocmd('BufEnter', {
     group = aleksandarGroup,
     callback = function()
-        vim.cmd.colorscheme("github_dark_dimmed")
+        vim.cmd.colorscheme("tokyonight-night")
     end
 })
 
