@@ -14,14 +14,6 @@ Personal Neovim config built around Lua and lazy.nvim.
 - Navigation and workflow plugins including Harpoon, Trouble, Undotree, Fugitive, and vim-tmux-navigator.
 - Tokyonight/GitHub theme setup with `tokyonight-night` as the active colorscheme.
 
-## Layout
-
-- `init.lua` loads the main `aleksandar` module.
-- `lua/aleksandar/set.lua` contains editor options.
-- `lua/aleksandar/remap.lua` contains keymaps.
-- `lua/aleksandar/lazy_init.lua` bootstraps lazy.nvim.
-- `lua/aleksandar/lazy/` contains plugin specs.
-
 ## Install
 
 Place this config at:
